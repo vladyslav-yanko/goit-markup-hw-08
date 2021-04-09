@@ -34,6 +34,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -694,6 +696,7 @@ textarea {
 }
 
 .our-team__li {
+  text-align: center;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1166,8 +1169,6 @@ textarea {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1207,6 +1208,8 @@ textarea {
 .modal__h {
   display: block;
   margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-bottom: 12px;
   font-weight: bold;
   font-size: 20px;
@@ -1272,13 +1275,15 @@ textarea {
 }
 
 .form-field__comment {
-  width: 448px;
+  width: 100%;
+  max-width: 448px;
   height: 120px;
   padding: 12px 16px;
 }
 
 .form-field__input {
-  width: 448px;
+  width: 100%;
+  max-width: 370px;
   height: 40px;
   padding-left: 42px;
 }
@@ -1344,8 +1349,8 @@ textarea {
 
 .form-policy__label {
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -1392,5 +1397,39 @@ textarea {
 
 .modal-button:hover, .modal-button:focus {
   background-color: #188ce8;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 100%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
+  }
+  .modal__h {
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    height: 100%;
+    max-height: 581px;
+  }
+  .modal__h {
+    line-height: 1.15;
+  }
+  .form-field__input {
+    max-width: 448px;
+  }
+  .form-field__comment {
+    max-width: 448px;
+  }
+  .form-policy__label {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 /*# sourceMappingURL=main.css.map */
