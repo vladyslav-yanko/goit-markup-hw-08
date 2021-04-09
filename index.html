@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <header class="header-border">
+    <header class="header">
     <div class="container header-container">
       <nav>
             <a href="/" class="logo"><span class="logo__color">Web</span>Studio</a>
@@ -31,15 +31,21 @@
             </ul>
       </nav>
 
+      <button type="button" class="header-button" data-menu-button>
+          <svg class="header-button__svg">
+              <use href="./image/svg/icons.svg#icon-header-open"></use>
+          </svg>
+      </button>
+
         <ul class="header-contact">
 
-            <li class="class-li header-menu__li">
+            <li class="class-li header-contact__li">
                 <a href="mailto:info@devstudio.com" class="header-contact__link">
                 <svg class="header-contact__icon" width="16px" height="12px">
                     <use href="./image/svg/sprite.svg#icon-envelope"></use>
                 </svg> info@devstudio.com</a>
             </li>
-            <li class="class-li header-menu__li">
+            <li class="class-li header-contact__li">
                 <a href="tel:+380961111111" class="header-contact__link">
                 <svg class="header-contact__icon" width="10px" height="16px">
                     <use href="./image/svg/sprite.svg#icon-smartphone"></use>
@@ -47,15 +53,50 @@
             </li>
         </ul>
     </div>
+
+    <div class="mobile-menu" data-menu>
+
+        <button type="button" class="header-close" data-menu-close>
+            <svg class="header-close__svg">
+                <use href="./image/svg/icons.svg#icon-header-close"></use>
+            </svg>
+        </button>
+
+        <ul class="mobile-menu__list">
+            <li class="class-li mobile-menu__li">
+                <a href="" class="mobile-menu__link link">Студия</a>
+            </li>
+            <li class="class-li mobile-menu__li">
+                <a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a>
+            </li>
+            <li class="class-li mobile-menu__li">
+                <a href="" class="mobile-menu__link link">Контакты</a>
+            </li>
+        </ul>
+        
+        <ul class="mobile-menu__contacts">
+            <li class="class-li"><a href="tel:+380961111111" class="menu-tel link">+38 096 111 11 11</a></li>
+            <li class="class-li"><a href="mailto:info@devstudio.com" class="menu-mail link">info@devstudio.com</a></li>
+        </ul>
+
+        <ul class="mobile-menu__network">
+            <li class="class-li li-social-network"><a href="" class="menu-social-network link">Instagram</a></li>
+            <li class="class-li li-social-network"><a href="" class="menu-social-network link">Twitter</a></li>
+            <li class="class-li li-social-network"><a href="" class="menu-social-network link">Facebook</a></li>
+            <li class="class-li li-social-network"><a href="" class="menu-social-network link">LinkedIn</a></li>
+        </ul>
+    </div>
+
     </header>
 
     <main>
     <!-- Hero -->
-    <section>
-        <div class="center section-hero">
+    <section class="hero">
+        <div class="container center section-hero">
             <h1 class="section-hero__title">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="section-hero__button" data-modal-open>Заказать услугу</button>
         </div>
+
     </section>
 
     <!-- Benefits -->
@@ -105,24 +146,24 @@
     </section>
 
     <!-- What are we doing -->
-    <section class="section">
+    <section class="section section-none">
         <div class="container">
             <h2 class="title-secondary">Чем мы занимаемся</h2>
             <ul class="waw-doing">
                 <li class="class-li waw-doing__li">
-                    <img src="./image/what-are-we-doing/img.jpg" alt="Человек печатает на планшете" width="370" height="294">
+                    <img src="./image/desktop/what-are-we-doing/img-one.jpg" alt="Человек печатает на планшете" width="370" height="294">
                     <div class="waw-doing__p">
                         <p>Десктопные приложения</p>
                     </div>
                 </li>
                 <li class="class-li waw-doing__li">
-                    <img src="./image/what-are-we-doing/img-1.jpg" alt="Человек печатает на ноутбуке" width="370" height="294">
+                    <img src="./image/desktop/what-are-we-doing/img-two.jpg" alt="Человек печатает на ноутбуке" width="370" height="294">
                     <div class="waw-doing__p">
                         <p>Мобильные приложения</p>
                     </div>
                 </li>
                 <li class="class-li waw-doing__li">
-                    <img src="./image/what-are-we-doing/img-2.jpg" alt="Человек рисует на планшете" width="370" height="294">
+                    <img src="./image/desktop/what-are-we-doing/img-three.jpg" alt="Человек рисует на планшете" width="370" height="294">
                     <div class="waw-doing__p">
                         <p>Дизайнерские решения</p>
                     </div>
@@ -132,7 +173,7 @@
     </section>
 
     <!-- our team -->
-    <section class="section secondary-background">
+    <!-- <section class="section secondary-background">
         <div class="container">
             <h2 class="title-secondary">Наша команда</h2>
             <ul class="our-team">
@@ -286,11 +327,11 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
     </main>
 
     <!-- regular clients -->
-    <section class="section">
+    <!-- <section class="section">
 
         <div class="container">
 
@@ -342,10 +383,10 @@
             </ul>
         </div>
 
-    </section>
+    </section> -->
 
     <!-- footer -->
-    <footer class="footer-padding">
+    <!-- <footer class="footer-padding">
         <div class="container footer-flex">
             <div class="footer-box-one">
                 <a href="/" class="logo"><span class="logo__color">Web</span><span class="logo__footer">Studio</span></a>
@@ -406,7 +447,7 @@
             </div>
             
         </div>
-    </footer>   
+    </footer>    -->
 
     <!-- backdrop -->
     <div class="backdrop is-hidden" data-modal>
@@ -474,6 +515,7 @@
         </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

@@ -30,3 +30,13 @@
     text-transform: uppercase;
   }
 }
+
+.section-none {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-none {
+    display: block;
+  }
+}
