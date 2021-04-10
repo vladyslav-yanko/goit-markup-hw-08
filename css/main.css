@@ -952,7 +952,6 @@ textarea {
 
 .icon-heading {
   display: block;
-  margin-top: 60px;
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 14px;
@@ -1093,6 +1092,14 @@ textarea {
           transform: translateY(-50%);
 }
 
+.footer-box-two {
+  margin-top: 60px;
+}
+
+.footer-box-three {
+  margin-top: 60px;
+}
+
 @media screen and (min-width: 768px) {
   .footer-tablet {
     display: -webkit-box;
@@ -1107,6 +1114,7 @@ textarea {
   }
   .footer-box-two {
     margin-left: 165px;
+    margin-top: 0;
   }
 }
 
@@ -1126,6 +1134,10 @@ textarea {
   .footer-box-two {
     margin-left: 0px;
     margin-right: 93px;
+    margin-top: 0;
+  }
+  .footer-box-three {
+    margin-top: 0;
   }
   .footer-padding {
     max-width: 1600px;
